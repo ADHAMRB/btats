@@ -1,0 +1,33 @@
+﻿<Page x:Class="movies_project.MOVIEDETAIL"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:movies_project"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="MOVIEDETAIL">
+
+    <Grid>
+        <Border CornerRadius="10" Background="White" Height="380" Width="360" VerticalAlignment="Center" HorizontalAlignment="Center" Padding="20">
+            <StackPanel>
+                <!-- Movie Name Field -->
+                <TextBlock Text="Movie Name" FontSize="14" Foreground="#555" Margin="0,5,0,5"/>
+                <Label x:Name="MovieNameTextBox" Height="35" Padding="5" Margin="0,0,0,10" Background="#EFEFEF" Content="{Binding MovieName}"/>
+
+                <!-- Category Field -->
+                <TextBlock Text="Category" FontSize="14" Foreground="#555" Margin="0,5,0,5"/>
+                <Label x:Name="CategoryTextBox" Height="35" Padding="5" Margin="0,0,0,10" Background="#EFEFEF" Content="{Binding Categoty}"/>
+                
+
+                <!-- Producer Field -->
+                <TextBlock Text="Producer" FontSize="14" Foreground="#555" Margin="0,5,0,5"/>
+                <Label x:Name="ProducerTextBox" Height="35" Padding="5" Margin="0,0,0,10" Background="#EFEFEF" Content="{Binding Producer}"/>
+
+                <!-- Year Field -->
+                <TextBlock Text="Year" FontSize="14" Foreground="#555" Margin="0,5,0,5"/>
+                <Label x:Name="YearTextBox" Height="35" Padding="5" Margin="0,0,0,10" Background="#EFEFEF" Content="{Binding MovieYear}"/>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Page>
